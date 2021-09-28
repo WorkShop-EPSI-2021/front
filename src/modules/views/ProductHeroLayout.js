@@ -31,7 +31,8 @@ function ProductHeroLayout(props) {
   const { sxBackground, children } = props;
 
   return (
-    <ProductHeroLayoutRoot>
+    <ProductHeroLayoutRoot         id="proposition"
+    >
       <Container
         sx={{
           mt: 3,
@@ -39,6 +40,7 @@ function ProductHeroLayout(props) {
           flexDirection: 'column',
           alignItems: 'center',
         }}
+
       >
 
         {children}

@@ -7,7 +7,7 @@ import Link from "@mui/material/Link";
 
 export default function CheckMail() {
   return (
-    <Box component="section" sx={{ display: "flex", overflow: "hidden" }}>
+    <Box component="section" sx={{ display: "flex", overflow: "hidden" }} id="sanitycheck">
       <Container
         sx={{
           mt: 10,

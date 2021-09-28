@@ -31,6 +31,7 @@ function ProductHowItWorks() {
     <Box
       component="section"
       sx={{ display: "flex", bgcolor: "secondary.light", overflow: "hidden" }}
+      id="scoring"
     >
       <Container
         sx={{

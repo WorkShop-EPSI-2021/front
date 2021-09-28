@@ -1,13 +1,19 @@
-import logo from "./logo.svg";
-
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Index from "./Home";
 
 function App() {
   return (
+    <Router>
     <div className="App">
-        <Index />
+            <Switch>
+          <Route path="/">
+            <Index />
+          </Route>
+          </Switch>
     </div>
+
+    </Router>
   );
 }
 

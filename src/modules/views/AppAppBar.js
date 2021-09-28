@@ -21,7 +21,7 @@ function AppAppBar() {
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
+            href="/"
             sx={{ fontSize: 24 }}
           >
             {`C' MAIL`}
@@ -32,7 +32,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/#proposition"
+              href="#proposition"
               sx={rightLink}
             >
               {'Proposition'}
@@ -41,7 +41,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="#scoring"
               sx={rightLink}
             >
               {'Scoring'}
@@ -50,7 +50,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="#details"
               sx={rightLink}
             >
               {'Details'}
@@ -59,7 +59,7 @@ function AppAppBar() {
               color="inherit"
               variant="h6"
               underline="none"
-              href="/premium-themes/onepirate/sign-in/"
+              href="#sanitycheck"
               sx={rightLink}
             >
               {'Sanity Checks'}
