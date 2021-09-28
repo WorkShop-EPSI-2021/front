@@ -3,7 +3,6 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import Button from "../components/Button";
 import Typography from "../components/Typography";
 import WarningIcon from "@mui/icons-material/Warning";
 import CheckIcon from "@mui/icons-material/Check";

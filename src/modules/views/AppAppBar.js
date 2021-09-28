@@ -24,7 +24,7 @@ function AppAppBar() {
             href="/premium-themes/onepirate/"
             sx={{ fontSize: 24 }}
           >
-            {'TROUVER UN NOM POUR L EXTENSION'}
+            {`C' MAIL`}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
           
