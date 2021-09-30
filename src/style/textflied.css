@@ -16,6 +16,16 @@
     flex-direction: row-reverse;
     justify-content: center;
     margin-bottom: 2em;
+    width: 100%;
+}
+
+.border {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    width: 20%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .class-textflied-gauche > p{

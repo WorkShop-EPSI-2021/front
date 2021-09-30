@@ -38,7 +38,6 @@ function Textfield(props) {
                     {addlien(props.lien)}
                 </p>
             </div>
-            <hr/>
         </div>
     );
 }
