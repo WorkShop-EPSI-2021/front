@@ -13,6 +13,8 @@ const ProductHeroLayoutRoot = styled("section")(({ theme }) => ({
     height: "90vh",
     minHeight: 500,
     maxHeight: 1300,
+    width: "100vw",
+    minWidth: 1800,
   },
 }));
 
@@ -22,7 +24,7 @@ const Background = styled(Box)(() => ({
   right: 0,
   top: 0,
   bottom: 0,
-  backgroundSize: "cover",
+  backgroundSize: "center",
   backgroundRepeat: "no-repeat",
   zIndex: -2,
 }));
@@ -54,14 +56,6 @@ function ProductHeroLayout(props) {
           }}
         />
         <Background sx={sxBackground} />
-        <Box
-          component="img"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Circle_arrow_down_font_awesome.svg/1200px-Circle_arrow_down_font_awesome.svg.png"
-          height="4rem"
-          width="4rem"
-          alt="arrow "
-          sx={{ position: "absolute", bottom: 32 }}
-        />
       </Container>
     </ProductHeroLayoutRoot>
   );

@@ -66,7 +66,8 @@ function AppAppBar() {
             <Link
               variant="h6"
               underline="none"
-              href="http://wikipedia.com"
+              href="https://github.com/WorkShop-EPSI-2021/extension-new"
+              target="_blank"
               sx={{ ...rightLink, color: 'red' }}
             >
               {'Télécharger'}

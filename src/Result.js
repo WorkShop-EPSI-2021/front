@@ -11,7 +11,6 @@ export default function Result() {
   const [loading, setLoading] = useState(false);
   const path = window.location.pathname;
   const IDPath = path.split("/").at(-1);
-  console.log(data);
 
   useEffect(() => {
     setLoading(true);
@@ -43,19 +42,22 @@ export default function Result() {
           <Fragment>
             <div className="result-top">
               <h3> Le mail est fiable à <span className={`${total > 50 ? "success" : "danger"}`}>{total}%</span></h3>
+              <div className="pie">
               <PieChart
                 data={data}
                 lineWidth={15}
                 label={(data) =>
                   `${data.dataEntry.title} : ${data.dataEntry.value}%`
                 }
-                labelPosition={110}
+                labelPosition={95}
                 labelStyle={{
                   fontSize: "4px",
                   fontWeight: "600",
                 }}
                 animate={true}
               />
+              </div>
+             
             </div>
 
             <div className="result-advanced">
@@ -70,13 +72,8 @@ export default function Result() {
 
               />
                   <h3>{oneData.title}</h3>
-                  <p className={`${oneData.value > 13 ? "success" : "danger"}`}>{oneData.value}/25</p>
-                  {oneData.title === "Positivité" &&
-                    (oneData.value > 13 ? (
-                      <p>Le message renvoit des ondes positives, il semble donc fiable grâce à cela.</p>
-                    ) : (
-                      <p>Le message renvoit des ondes négatives, vous devriez vous méfier, c'est une caractéristique des mails frauduleux.</p>
-                    ))}
+                  <p className={`${oneData.value > 16 ? "success" : "danger"}`}>{oneData.value}/33</p>
+                  
                   {oneData.title === "Orthographe" &&
                     (oneData.value > 13 ? (
                       <p>Il n'y a que très peu de fautes dans le mail, il semble donc ne pas être frauduleux.</p>

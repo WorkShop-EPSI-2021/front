@@ -3,23 +3,21 @@ import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
 
-const backgroundImage =
-  '../images/background-site-web-2.png';
-
+import bgImage from "../images/background-site-web-2.png";
 
 export default function ProductHero() {
   return (
     <ProductHeroLayout
       sxBackground={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: '#555555', // Average color of the background image.
+        backgroundImage: `url(${bgImage})`,
+        backgroundColor: '#333333', // Average color of the background image.
         backgroundPosition: 'center',
       }}
     >
       {/* Increase the network loading priority of the background image. */}
       <img
         style={{ display: 'none' }}
-        src={backgroundImage}
+        src={bgImage}
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
@@ -38,7 +36,8 @@ export default function ProductHero() {
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="https://github.com/WorkShop-EPSI-2021/extension-new"
+        target="_blank"
         sx={{ minWidth: 200 }}
       >
         Télécharger
