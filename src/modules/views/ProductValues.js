@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import Typography from '../components/Typography';
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Typography from "../components/Typography";
 
 const item = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
   px: 5,
 };
 
@@ -16,15 +16,16 @@ function ProductValues() {
   return (
     <Box
       component="section"
-      sx={{ display: 'flex', overflow: 'hidden', bgcolor: 'secondary.light' }}
+      sx={{ display: "flex", flexDirection: "column", overflow: "hidden", bgcolor: "secondary.light" }}
       id="details"
     >
-      <Container sx={{ mt: 15, mb: 15, display: 'flex', position: 'relative' }}>
+      <Typography color="inherit" align="center" variant="h4" marked="center" sx={{ mt: 15}}>
+        Comment ça marche ?
+      </Typography>
+      <Container sx={{ mt: 15, mb: 15, display: "flex", position: "relative" }}>
         <Box
           component="img"
-          src="/static/themes/onepirate/productCurvyLines.png"
-          alt="curvy lines"
-          sx={{ pointerEvents: 'none', position: 'absolute', top: -180 }}
+          sx={{ pointerEvents: "none", position: "absolute", top: -180 }}
         />
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
@@ -58,7 +59,7 @@ function ProductValues() {
               </Typography>
               <Typography variant="h5">
                 {
-                  "Ouvrez un mail et lancez le scan via l'extension, vous aurez un résultat sur 100 représentant la fiabilité du mail."  
+                  "Ouvrez un mail et lancez le scan via l'extension, vous aurez un résultat sur 100 représentant la fiabilité du mail."
                 }
               </Typography>
             </Box>
@@ -75,7 +76,9 @@ function ProductValues() {
                 Vous êtes protégés
               </Typography>
               <Typography variant="h5">
-                {"Grâce aux informations reçues, vous apprendrez à identifier de mieux en mieux les mails frauduleux et éviterez de vous faire arnaquer. "}
+                {
+                  "Grâce aux informations reçues, vous apprendrez à identifier de mieux en mieux les mails frauduleux et éviterez de vous faire arnaquer. "
+                }
               </Typography>
             </Box>
           </Grid>

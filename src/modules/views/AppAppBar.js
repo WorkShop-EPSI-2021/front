@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import AppBar from '../components/AppBar';
 import Toolbar from '../components/Toolbar';
-import { NavHashLink } from 'react-router-hash-link';
 
 const rightLink = {
   fontSize: 16,
@@ -14,7 +13,7 @@ const rightLink = {
 function AppAppBar() {
   return (
     <div>
-      <AppBar position="fixed">
+      <AppBar position="fixed" style={{backgroundColor: "black"}}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ flex: 1 }} />
           <Link
@@ -68,7 +67,7 @@ function AppAppBar() {
               variant="h6"
               underline="none"
               href="http://wikipedia.com"
-              sx={{ ...rightLink, color: 'secondary.main' }}
+              sx={{ ...rightLink, color: 'red' }}
             >
               {'Télécharger'}
             </Link>

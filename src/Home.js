@@ -10,11 +10,9 @@ import withRoot from './modules/withRoot';
 function Index() {
   return (
     <React.Fragment>
-      <AppAppBar />
       <ProductHero />
       <ProductValues />
       <CheckMail />
-      {/* <ProductCategories /> */}
       <h2>AJOUTER ARTICLES</h2> 
       <ProductHowItWorks />
 
