@@ -1,0 +1,35 @@
+.class-textflied{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.class-textflied > p{
+    max-width: 33%;
+    margin-left: 0.8em;
+    text-align: justify;
+}
+
+.class-textflied-gauche{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.class-textflied-gauche > p{
+    max-width: 33%;
+    margin-right: 0.8em;
+    text-align: justify;
+}
+
+hr{
+    width: 70%;
+    margin-bottom: 2em;
+    height: 0.1em;
+    background-color : #606060;
+    border: none;
+
+}
+
