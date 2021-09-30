@@ -29,9 +29,12 @@
 }
 
 .result-top {
-  color: blue;
   display: flex;
   flex-direction: column;
+  width: 1000px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .result {
@@ -43,6 +46,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 5rem;
+  align-items: flex-start;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.success {
+  color: green;
+}
+
+.danger {
+  color: red;
 }
 
 @keyframes App-logo-spin {
